@@ -1,0 +1,16 @@
+A user needs:
+Contacts/ Friends/ Loved ones?
+Needs
+  - Physical Contact
+  - Verbal Affirmation
+  - Make me laugh
+  - Listen to me
+  - Give me space
+  - Suprise me with something
+  - Give me some company
+State
+   - Needs Help
+   - Overloaded
+   - Open
+   - ?
+
