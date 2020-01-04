@@ -6,4 +6,5 @@ public class Needs implements INeeds {
   public Needs(String name) {
     this.name = name;
   }
+
 }

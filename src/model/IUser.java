@@ -35,8 +35,6 @@ public interface IUser {
    */
   public void deleteNeed(INeeds toDelete);
 
-
-
   /**
    * A method that allows a friend to be removed from a user's friend list.
    * @param toRemove

@@ -15,7 +15,17 @@ public interface IUserNetwork {
    */
   public ArrayList<IUser> getUsers();
 
+  /**
+   * A method that adds a user to the network.
+   * @param toAdd the user to add.
+   */
+  public void addUser(IUser toAdd);
 
+  /**
+   * A method that delets a user from the network.
+   * @param toDelete the user to delete.
+   */
+  public void deleteUser(IUser toDelete);
 
 
 }
