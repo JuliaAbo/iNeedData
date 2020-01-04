@@ -5,21 +5,11 @@ package model;
  */
 public interface IUser {
 
-  /**
-   * A method that allows this user to request to be friends with another user.
-   * @param other the desired other user to befriend.
-   */
-  public void requestFriend(IUser other);
-
-  /**
-   * A method that allows this user to recieve a friend quest and file it to be managed.
-   */
-  public void takeFriendRequest();
 
   /**
    * A method that allows a user to accept a friend request, becoming friends with the given user.
    */
-  public void acceptFriendRequest();
+  public void acceptFriendRequest(IUser personRequestingFriendship);
 
   /**
    * This allows the user to create their own customized need.
@@ -31,7 +21,7 @@ public interface IUser {
    * This is a method that allows a user to update what their current Needs are.
    * @param toChange the need that should be updated.
    */
-  public void changeNeed(INeed toChange, Affirmative changeTo);
+  public void changeNeed(INeeds toChange, Affirmative changeTo);
 
   /**
    * A method that allows a user to update their currrent status as desired.
@@ -43,18 +33,19 @@ public interface IUser {
    * Allows a user to delete a need that is no longer relevant to them.
    * @param toDelete
    */
-  public void deleteNeed(INeed toDelete);
+  public void deleteNeed(INeeds toDelete);
 
-  /**
-   * A method that allows a user to send a message to their friends asking for help, based on
-   * their profile information.
-   */
-  public void askForHelp(IUser... toAsk);
 
 
   /**
-   * A method that allows for a message to be recieved by a user.
-   * @param message the message to be recieved.
+   * A method that allows a friend to be removed from a user's friend list.
+   * @param toRemove
    */
-  public void getMessage(String message);
+  public void removeFriend(IUser toRemove);
+
+  /**
+   * A method that retrieves the identifying name of this user.
+   * @return the name of this user.
+   */
+  public String getName();
 }

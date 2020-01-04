@@ -1,4 +1,7 @@
 package view;
 
-public class UserPage {
+import javax.swing.*;
+
+public class UserPage extends JFrame {
+
 }

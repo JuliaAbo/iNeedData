@@ -1,9 +1,9 @@
 package model;
 
-public class Need implements INeed{
+public class Needs implements INeeds {
   String name;
 
-  public Need(String name) {
+  public Needs(String name) {
     this.name = name;
   }
 }
